@@ -1,0 +1,119 @@
+<html>
+  <head> </head>
+  <body>
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <form action="./addData" method="post" id="form">
+      <div class="form-group">
+        <label>学号：</label>
+        <input
+          type="text"
+          name="sNumber"
+          value="<%=sNumber%>"
+          readonly="readonly"
+          REQUIRED
+        />
+      </div>
+      <div class="form-group">
+        <label>姓名：</label>
+        <input
+          id="name"
+          type="text"
+          name="sName"
+          value="<%=sName%>"
+          class="form-control"
+          readonly="readonly"
+          REQUIRED
+        />
+      </div>
+      <div class="form-group">
+        <label>学院名：</label>
+        <input
+          type="text"
+          name="sAcademy"
+          class="form-control"
+          REQUIRED
+        /><br />
+        (软件与大数据学院请填写软大学院，其他学院自行查询请假记录参照)
+      </div>
+      <div class="form-group">
+        <label>班级名：</label>
+        <input type="text" name="sClass" class="form-control" REQUIRED />
+      </div>
+      <div class="form-group">
+        <label>请假类型：</label>
+        <input
+          type="radio"
+          name="sType"
+          value="0"
+          class="form-control"
+          checked="true"
+          REQUIRED
+        />病假
+        <input
+          type="radio"
+          name="sType"
+          value="1"
+          class="form-control"
+          REQUIRED
+        />事假（因私）
+        <input
+          type="radio"
+          name="sType"
+          value="2"
+          class="form-control"
+          REQUIRED
+        />事假（因公）
+      </div>
+      <div class="form-group">
+        <label>请假日期：</label><br />
+        &nbsp;开始日期：<input
+          type="datetime-local"
+          name="sDate"
+          class="form-control"
+          REQUIRED
+        /><br />
+        &nbsp;结束日期：<input
+          type="datetime-local"
+          name="eDate"
+          class="form-control"
+          REQUIRED
+        />
+      </div>
+      <div class="form-group">
+        <label>请假理由：</label>
+        <input
+          type="text"
+          name="sReason"
+          class="form-control"
+          REQUIRED
+        />(例：看病开药)
+      </div>
+      <div class="form-group">
+        <label>联系手机号：</label>
+        <input type="text" name="sPhone" class="form-control" REQUIRED />
+      </div>
+      <div class="form-group">
+        <label>审核人：</label>
+        <input
+          type="text"
+          name="teacherName"
+          class="form-control"
+          REQUIRED
+        />(一般为班主任姓名)
+      </div>
+      <input id="submit" type="submit" class="form-control" value="添加" />
+    </form>
+    <h3 style="color: red"><%=msg%></h3>
+  </body>
+  <script>
+    setTimeout(function () {
+      if (document.getElementById("name").value == "null") {
+        document.getElementById("submit").disabled = true;
+        alert("读取异常，请重启虚拟机或去设置里强行停止今日校园重新打开");
+      }
+    }, 1000);
+  </script>
+</html>

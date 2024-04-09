@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>常信院进出校园登记</title>
+    <meta charset="utf-8" />
+    <meta name="renderer" content="webkit|ie-comp|ie-stand" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge; chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta property="og:title" content="常信院进出校园登记" />
+    <meta
+      property="og:image"
+      content="https://g.jdycdn.com/app/pc/v497/resources/images/mobile/jdy_icon.png"
+    />
+    <meta
+      name="description"
+      property="og:description"
+      content="填写表单，提交数据"
+    />
+    <link href="https://g.jdycdn.com/" rel="preconnect" />
+    <link href="https://g.jdycdn.com/" rel="dns-prefetch" />
+    <link
+      href="https://g.jdycdn.com/app/mobile/jdy-design.1afcf9200f40f85805c4.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://g.jdycdn.com/app/mobile/form-view.1afcf9200f40f85805c4.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root">
+      <div class="fxm-link-form">
+        <div class="fxm-external-form">
+          <div class="fxm-auth-form">
+            <div class="form-head">
+              <div class="head-banner" style="background-color: transparent">
+                <img
+                  src="https://g.jdycdn.com/app/pc/v497/resources/images/theme/form/bn_12.jpg"
+                  alt="image"
+                />
+              </div>
+              <div
+                class="head-title"
+                style="
+                  text-align: left;
+                  font-size: 20px;
+                  font-style: normal;
+                  font-weight: bold;
+                  color: rgb(42, 98, 208);
+                "
+              >
+                常信院进出校园登记
+              </div>
+            </div>
+            <div class="fxm-form">
+              <div class="form-wrapper has-bottom-padding">
+                <div class="form-inner-wrapper">
+                  <div
+                    class="fxm-field"
+                    data-widgetname="_widget_1581218284712"
+                  >
+                    <div class="field-label">
+                      <span class="field-required">*</span>
+                      <div class="field-name">查询字段</div>
+                    </div>
+                    <div class="field-description fxm-sub-html">
+                      <p>默认填写</p>
+                    </div>
+                    <div class="field-component">
+                      <div class="fxm-form-content-disabled">常信院</div>
+                    </div>
+                  </div>
+                  <div
+                    class="fxm-field"
+                    data-widgetname="_widget_1581238282435"
+                  >
+                    <div class="field-label">
+                      <span class="field-required">*</span>
+                      <div class="field-name">联系方式</div>
+                    </div>
+                    <div class="field-description fxm-sub-html">
+                      <b style="color: rgb(217, 83, 79)"
+                        >首次登记需要完整信息，后续个人信息会自动带出。</b
+                      >
+                    </div>
+                    <div class="field-component">
+                      <div class="fxm-form-text">
+                        <div
+                          class="text-area"
+                          id="phone"
+                          placeholder="请填写内容"
+                          inputmode="text"
+                          contenteditable="true"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="fxm-field"
+                    data-widgetname="_widget_1581218284036"
+                  >
+                    <div class="field-label">
+                      <span class="field-required">*</span>
+                      <div class="field-name">姓名</div>
+                    </div>
+                    <div class="field-component">
+                      <div class="fxm-form-text">
+                        <div
+                          class="text-area"
+                          id="name"
+                          placeholder="请填写内容"
+                          inputmode="text"
+                          contenteditable="true"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="fxm-field"
+                    data-widgetname="_widget_1649514853977"
+                  >
+                    <div class="field-label">
+                      <span class="field-required">*</span>
+                      <div class="field-name">进出校选择</div>
+                    </div>
+                    <div class="field-component">
+                      <div class="fxm-form-radiogroup">
+                        <div
+                          class="x-radio-group x-radiogroup-normal radio-group-vertical"
+                        >
+                          <div
+                            class="x-radio group-item color-item"
+                            id="in1"
+                            onclick="checkedIn()"
+                          >
+                            <span class="radio-check-icon"></span
+                            ><span class="radio-text"
+                              ><div
+                                class="x-tag theme-default multi-line"
+                                style="
+                                  background: rgb(250, 83, 83);
+                                  color: rgb(255, 255, 255);
+                                  border: 1px solid rgb(250, 83, 83);
+                                "
+                              >
+                                <div class="tag-content">进校</div>
+                              </div></span
+                            >
+                          </div>
+
+                          <div
+                            class="x-radio group-item color-item"
+                            id="out1"
+                            onclick="checkedOut()"
+                          >
+                            <span class="radio-check-icon"></span
+                            ><span class="radio-text"
+                              ><div
+                                class="x-tag theme-default multi-line"
+                                style="
+                                  background: rgb(47, 205, 110);
+                                  color: rgb(255, 255, 255);
+                                  border: 1px solid rgb(47, 205, 110);
+                                "
+                              >
+                                <div class="tag-content">离校</div>
+                              </div></span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="fxm-field"
+                    data-widgetname="_widget_1581218284092"
+                  >
+                    <div class="field-label">
+                      <span class="field-required">*</span>
+                      <div class="field-name">申请时间</div>
+                    </div>
+                    <div class="field-component" style="">
+                      <div
+                        class="fxm-form-content-disabled"
+                        style="line-height: 0.22rem"
+                      >
+                        <span style="display: block; padding-top: 1px"
+                          ><%=nowDate1%></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="fxm-field"
+                    data-widgetname="_widget_1581218285519"
+                  >
+                    <div class="field-label">
+                      <span class="field-required">*</span>
+                      <div class="field-name">所属部门或者到访部门</div>
+                    </div>
+                    <div class="field-description fxm-sub-html">
+                      <p>
+                        <span style="color: rgb(217, 83, 79); font-weight: bold"
+                          >请下拉选择</span
+                        >
+                      </p>
+                    </div>
+                    <div class="field-component">
+                      <div class="fxm-form-dropdown">
+                        <div class="fxm-combo x-dropdown-combo">
+                          <div class="x-picker-label">
+                            <ul class="select-list">
+                              <li class="select-item">软件与大数据学院</li>
+                            </ul>
+                            <i
+                              class="x-icon iconfont-fx-mobile icon-angle-down"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="fxm-field"
+                    data-widgetname="_widget_1581218284077"
+                  >
+                    <div class="field-label">
+                      <span class="field-required">*</span>
+                      <div class="field-name">车牌号</div>
+                    </div>
+                    <div class="field-description fxm-sub-html">
+                      <p>
+                        <span style="font-weight: bold; color: rgb(217, 83, 79)"
+                          >完整车牌号（如：苏D12345，字母大写，必须写全，如单人进入写“无”）</span
+                        ><br />
+                      </p>
+                    </div>
+                    <div class="field-component">
+                      <div class="fxm-form-text">
+                        <div
+                          class="text-area"
+                          placeholder="请填写内容"
+                          inputmode="text"
+                          contenteditable="true"
+                        >无</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="inInput" style="display: none">
+                    <div
+                      class="fxm-field"
+                      data-widgetname="_widget_1649514660470"
+                    >
+                      <div class="field-label">
+                        <span class="field-required">*</span>
+                        <div class="field-name">实际入校时间</div>
+                      </div>
+                      <div class="field-component">
+                        <div class="fxm-form-datetime">
+                          <div class="datetime-label">
+                            <%=nowDate%><i
+                              class="x-icon iconfont-fx-mobile icon-datetime"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="fxm-field"
+                      data-widgetname="_widget_1649514660411"
+                    >
+                      <div class="field-label">
+                        <span class="field-required">*</span>
+                        <div class="field-name">计划离校时间</div>
+                      </div>
+                      <div class="field-component">
+                        <div class="fxm-form-datetime">
+                          <div class="datetime-label">
+                            <%=nowDate%><i
+                              class="x-icon iconfont-fx-mobile icon-datetime"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="fxm-field"
+                    data-widgetname="_widget_1581218284104"
+                  >
+                    <div class="field-label">
+                      <span class="field-required">*</span>
+                      <div class="field-name">身份证号码</div>
+                    </div>
+                    <div class="field-component">
+                      <div class="fxm-form-text">
+                        <div
+                          id="identity"
+                          class="text-area"
+                          placeholder="请填写内容"
+                          inputmode="text"
+                          contenteditable="true"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="fxm-field"
+                    data-widgetname="_widget_1581218284132"
+                  >
+                    <div class="field-label">
+                      <span class="field-required">*</span>
+                      <div class="field-name">体温</div>
+                    </div>
+                    <div class="field-component">
+                      <div class="fxm-form-number">
+                        <div class="fxm-format-number-input">
+                          <input
+                            class="normal-input"
+                            type="text"
+                            placeholder="请填写数字"
+                            value=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="outInput" style="display: none">
+                    <div
+                      class="fxm-field"
+                      data-widgetname="_widget_1649514853925"
+                    >
+                      <div class="field-label">
+                        <span class="field-required">*</span>
+                        <div class="field-name">实际离校时间</div>
+                      </div>
+                      <div class="field-component">
+                        <div class="fxm-form-datetime">
+                          <div class="datetime-label">
+                            <%=nowDate%><i
+                              class="x-icon iconfont-fx-mobile icon-datetime"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="fxm-field"
+                    data-widgetname="_widget_1581218284147"
+                  >
+                    <div class="field-label">
+                      <div class="field-name">其他需要说明的</div>
+                    </div>
+                    <div class="field-component">
+                      <div class="fxm-form-textarea">
+                        <div
+                          class="text-area"
+                          placeholder="请填写内容"
+                          inputmode="text"
+                          contenteditable="true"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="fxm-form-button form-button">
+                <div class="button-group">
+                  <div
+                    class="x-button button op-forward type-primary"
+                    onclick="submit()"
+                    style="background-color: rgb(61, 121, 237)"
+                  >
+                    <div class="text">提交</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script type="text/javascript">
+      window.jdy_config = {
+        site: "https://www.jiandaoyun.com",
+        link_site: "https://link.jiandaoyun.com",
+        api_site: "https://api.jiandaoyun.com",
+        kms_site: "https://kms.jiandaoyun.com",
+        crm_site: "https://www.jiandaoyun.com",
+        assets_site: "https://g.jdycdn.com/app/pc/v497",
+        geo_amap_key: "c471351bf394765d2c41e58ac7540233",
+        geo_amap_security_config: {},
+        geojson_site: "https://g.jdycdn.com/shared/geojson/2021-08-01",
+        cookie_domain: ".jiandaoyun.com",
+        version: "4.9.7",
+        track_log_host: "https://track.jiandaoyun.com/log",
+        track_enable: true,
+        websocket_site: "https://messaging.jiandaoyun.com",
+      };
+      // 高德地图代理服务器设置
+      if (window.jdy_config && window.jdy_config.geo_amap_security_config) {
+        window._AMapSecurityConfig = window.jdy_config.geo_amap_security_config;
+      }
+      window.jdy_csrf_token = "dtss0Pb4-pIJjAEKNysQmt_1Vc38UVVMyCsw";
+      window.jdy_static = {
+        jdy_ver: "4.9.7",
+        ip: "58.216.213.59",
+        internal_link_site: "https://www.jiandaoyun.com",
+      };
+      window.jdy_env = "production";
+      window.jdy_jssdk_config = null;
+    </script>
+    <script
+      type="text/javascript"
+      async=""
+      src="//hm.baidu.com/hm.js?48ee90f250328e7eaea0c743a4c3a339"
+    ></script> -->
+    <!-- <script type="text/javascript">
+      window.jdy_access_token = "y2bo2BfoErS62BcCBdW4I9TPos+rhwoT2aGJj14bA0w=";
+      window.jdy_access_type = "form_public";
+      window.jdy_access_id = "5e3f79eb92c2f000065d493f";
+      window.jdy_form_view_config = {
+        needPass: false,
+        hasLogo: false,
+        hasCustomTheme: true,
+        appId: "5cb6bc140ff6db41f209cf85",
+        entryId: "5e3f79eb92c2f000065d493e",
+        abuseReportUrl:
+          "https://www.jiandaoyun.com/f/5b7a57b36774443a74336ef6?ext=5e3f79eb92c2f000065d493f",
+        wxEnhanceEnable: false,
+        ext: "",
+        wx_open_id: "",
+        wx_nickname: "",
+      };
+    </script> -->
+    <script src="https://g.jdycdn.com/app/mobile/manifest.1afcf9200f40f85805c4.js"></script>
+    <script src="https://g.jdycdn.com/app/mobile/utils.1afcf9200f40f85805c4.js"></script>
+    <script src="https://g.jdycdn.com/app/mobile/jdy-design.1afcf9200f40f85805c4.js"></script>
+    <script src="https://g.jdycdn.com/app/mobile/react.1afcf9200f40f85805c4.js"></script>
+    <script src="https://g.jdycdn.com/app/mobile/common.1afcf9200f40f85805c4.js"></script>
+    <script src="https://g.jdycdn.com/app/mobile/form-view.1afcf9200f40f85805c4.js"></script>
+
+    <div id="omni-extension" class="omni-closing omni-extension">
+      <div id="omni-wrap">
+        <div id="omni">
+          <div id="omni-search">
+            <input placeholder="Type a command or search" />
+          </div>
+          <div id="omni-list"></div>
+          <div id="omni-footer">
+            <div id="omni-results">153 results</div>
+            <div id="omni-arrows">
+              Use arrow keys <span class="omni-shortcut">↑</span
+              ><span class="omni-shortcut">↓</span> to navigate
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="omni-overlay"></div>
+    </div>
+    <div id="omni-extension-toast">
+      <img
+        src="chrome-extension://mapjgeachilmcbbokkgcbgpbakaaeehi/assets/check.svg"
+      /><span>The action has been successful</span>
+    </div>
+  </body>
+  <script>
+    function checkedIn() {
+      document.getElementById("in1").classList.add("radio-checked");
+      document.getElementById("out1").classList.remove("radio-checked");
+
+      document.getElementById("inInput").style.display = "";
+      document.getElementById("outInput").style.display = "none";
+    }
+    function checkedOut() {
+      document.getElementById("out1").classList.add("radio-checked");
+      document.getElementById("in1").classList.remove("radio-checked");
+
+      document.getElementById("inInput").style.display = "none";
+      document.getElementById("outInput").style.display = "";
+    }
+    function submit() {
+      var phone = document.getElementById("phone").innerText;
+      var name = document.getElementById("name").innerText;
+      var identity = document.getElementById("identity").innerText;
+
+      location.href = "./checksuccess?phone=" + phone+"&name="+name+"&identity="+identity
+
+    }
+  </script>
+</html>

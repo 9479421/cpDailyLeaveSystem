@@ -1,0 +1,202 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="http://res.ccit.js.cn/bh_components/mobile/1.0.0/bh-lib.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://res.ccit.js.cn/fe_components/iconfont_mobile/iconfont.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://res.ccit.js.cn/fe_components/iconfont_xg/iconfont.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./mob.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://res.ccit.js.cn/fe_components/skins/mint2.0/skin.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://res.ccit.js.cn/fe_components/mobile/MINT/style.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://res.ccit.js.cn/bower_components/cropper/cropper.min.css"
+    />
+  </head>
+  <body>
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <div id="app">
+      <!---->
+      <div>
+        <div>
+          <div class="mint-layout-container pjaw6zrp8"></div>
+          <%for(let i=0;i<list.length;i++){%>
+            <div class="mint-layout-container cjarv696w" onclick="onTopClick(JSON.parse('<%=JSON.stringify(list[i])%>'))">
+              <div
+                class="mint-layout-container bh-bg-color-light sjaku1g03 OPjdjwm5hrz"
+              >
+                <div class="mint-layout-lr OCjaup3gjn">
+                  <div
+                    position="left"
+                    class="mint-layout-lr-item mint-layout-container"
+                  >
+                    <div
+                      class="mint-text bh-color-gray sjakvwd5t OCjaup3gjsk mt-color-default"
+                    >
+                    <%=list[i].sType%>
+                    </div>
+                  </div>
+                  <div
+                    position="right"
+                    class="mint-layout-lr-item mint-layout-container"
+                  >
+                    <!---->
+                    <div
+                      class="mint-text bh-color-gray sjakvxbio OCjaup3gjrk mt-color-default"
+                    >
+                      <%=list[i].status%>
+                    </div>
+                    <span
+                      class="mint-badge sjarv4c2z OCjaup3gjsp OPjdjwm5htz mt-color-white mt-bg-primary is-size-small bh-bg-color-green"
+                    ></span>
+                  </div>
+                </div>
+                <div class="mint-layout-lr">
+                  <div
+                    position="left"
+                    class="mint-layout-lr-item mint-layout-container"
+                  >
+                    <div
+                      class="mint-text bh-color-gray-3 sjaky9s9n mt-color-default"
+                    >
+         
+                    <%=list[i].sDate%> / 共<%=list[i].sDays%>天
+                    </div>
+                  </div>
+                  <div
+                    position="right"
+                    class="mint-layout-lr-item mint-layout-container OCjaup3gjo"
+                  ></div>
+                </div>
+              </div>
+              <div class="mint-hr" style="background: rgb(232, 232, 232)"></div>
+            </div>
+          <%}%>
+          
+          <!-- <div class="mint-layout-container cjarv696w">
+            <div
+              class="mint-layout-container bh-bg-color-light sjaku1g03 OPjdjwm5hrz"
+            >
+              <div class="mint-layout-lr OCjaup3gjn">
+                <div
+                  position="left"
+                  class="mint-layout-lr-item mint-layout-container"
+                >
+                  <div
+                    class="mint-text bh-color-gray sjakvwd5t OCjaup3gjsk mt-color-default"
+                  >
+                    事假（因公）
+                  </div>
+                </div>
+                <div
+                  position="right"
+                  class="mint-layout-lr-item mint-layout-container"
+                >
+                  
+                  <div
+                    class="mint-text bh-color-gray sjakvxbio OCjaup3gjrk mt-color-default"
+                  >
+                    已销假
+                  </div>
+                  <span
+                    class="mint-badge sjarv4c2z OCjaup3gjsp OPjdjwm5htz mt-color-white mt-bg-primary is-size-small bh-bg-color-green"
+                  ></span>
+                </div>
+              </div>
+              <div class="mint-layout-lr">
+                <div
+                  position="left"
+                  class="mint-layout-lr-item mint-layout-container"
+                >
+                  <div
+                    class="mint-text bh-color-gray-3 sjaky9s9n mt-color-default"
+                  >
+                    2021-12-07 06:00 至 2021-12-07 07:20 / 共1天
+                  </div>
+                </div>
+                <div
+                  position="right"
+                  class="mint-layout-lr-item mint-layout-container OCjaup3gjo"
+                ></div>
+              </div>
+            </div>
+            <div class="mint-hr" style="background: rgb(232, 232, 232)"></div>
+          </div>
+ -->
+
+
+          <div
+            class="mint-text bh-color-gray-3 sjas3qgf1 OPjaw73o5j mt-color-default"
+            text="没有更多啦~"
+            style="font-size: 18px; text-align: center; margin-bottom: 22px"
+          >
+            没有更多啦~
+          </div>
+          <div
+            class="mint-fixed-button mt-color-white sjarvhx43 mint-fixed-button--bottom-right mint-fixed-button--primary mt-bg-primary"
+            size="40px"
+            contentmargintop="0"
+            text="+"
+            style="right: 16px; bottom: 20px"
+            onclick="create('<%=sNumber%>','<%=sName%>')"
+          >
+            <div class="mint-fixed-button--plus">
+              <div class="mint-fixed-button--plus_h"></div>
+              <div class="mint-fixed-button--plus_v"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="xsfw_yypjDiv" class="xsfwpjmob-nav" style="display: none">
+        <div class="xsfwpjmob-nav-icon">
+          <img src="https://wqby-1304194722.cos.ap-nanjing.myqcloud.com/img/pingjia.png" />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    // var conts = document.getElementsByClassName("mint-layout-container");
+    // for(var i = 0 ; i < conts.length;i++){
+    //   conts[i].onclick = function () {
+    //   location.href = "./pageDetails?"+list[i].teacherName;
+    // };
+    // }
+    var sum = 0;
+
+    function onTopClick(item){
+      window.location.href = './pageDetails?id='+item.id+'&sNumber='+item.sNumber+'&sName='+item.sName+'&sAcademy='+item.sAcademy+'&sClass='+item.sClass+'&sType='+item.sType+'&sDate='+item.sDate+'&sDays='+item.sDays+'&sStart='+item.sStart+'&sReason='+item.sReason+'&sPhone='+item.sPhone+'&teacherName='+item.teacherName+'&status='+item.status
+    }
+
+    function create(sNumber,sName){
+      sum++;
+      if(sum>10){
+        window.location.href = './create?sNumber='+sNumber+'&sName='+sName;
+      }
+      
+    }
+  </script>
+</html>

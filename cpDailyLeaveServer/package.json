@@ -1,0 +1,29 @@
+{
+  "name": "leaveserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pkg:win": "pkg . -t node14-win-x64 -o app-win --debug",
+    "pkg:mac": "pkg . -t node14-mac-x64 -o app-mac --debug",
+    "pkg:linux": "pkg . -t node14-linux-x64 -o app-linux --debug"
+  },
+  "bin": "./app.js",
+  "pkg": {
+    "assets": [
+      "public/**/*",
+      "views/**/*"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.8",
+    "express": "^4.17.1",
+    "moment": "^2.29.4",
+    "mysql2": "^2.3.3"
+  }
+}

@@ -1,0 +1,192 @@
+<html>
+  <head>
+    <title>常信院进出校园登记</title>
+    <meta charset="utf-8" />
+    <meta name="renderer" content="webkit|ie-comp|ie-stand" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge; chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta property="og:title" content="常信院进出校园登记" />
+    <meta
+      property="og:image"
+      content="https://g.jdycdn.com/app/pc/v497/resources/images/mobile/jdy_icon.png"
+    />
+    <meta
+      name="description"
+      property="og:description"
+      content="填写表单，提交数据"
+    />
+    <link href="https://g.jdycdn.com/" rel="preconnect" />
+    <link href="https://g.jdycdn.com/" rel="dns-prefetch" />
+    <link
+      href="https://g.jdycdn.com/app/mobile/jdy-design.1afcf9200f40f85805c4.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://g.jdycdn.com/app/mobile/form-view.1afcf9200f40f85805c4.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="">
+    <div id="root">
+      <div class="fxm-link-form">
+        <div class="fxm-external-form">
+          <div class="fxm-auth-form">
+            <div class="fxm-success-info custom-info fxm-sub-html">
+              <div>
+                <div>
+                  <p style="text-align: center">
+                    <span style="font-size: 22px; color: rgb(92, 184, 92)"
+                      ><b style=""><br /></b
+                    ></span>
+                  </p>
+                  <p style="text-align: center">
+                    <span style="font-size: 22px; color: rgb(92, 184, 92)"
+                      ><b style="">提交成功</b></span
+                    >
+                  </p>
+                  <p style="text-align: center">
+                    <font color="#d9534f"
+                      ><span style="font-size: 22px"
+                        ><b><br /></b></span
+                    ></font>
+                  </p>
+                  <p style="text-align: center">
+                    <span style="color: rgb(217, 83, 79); font-size: 20px"
+                      ><b>请把此界面出示给出入检查人员核验。</b></span
+                    ><br />
+                  </p>
+                  <p style="text-align: center">
+                    <span style="font-size: 22px; color: rgb(23, 140, 223)"
+                      ><br
+                    /></span>
+                  </p>
+                  <p style="text-align: center">
+                    <span style="font-size: 20px; color: rgb(23, 140, 223)"
+                      >手机号：</span
+                    ><span style="font-size: 20px"><%=phone%></span>
+                  </p>
+                  <p style="text-align: center">
+                    <span style="font-size: 20px">﻿</span
+                    ><span style="font-size: 20px; color: rgb(23, 140, 223)"
+                      >姓名：</span
+                    ><span style="font-size: 20px"><%=name%></span>
+                  </p>
+                  <p style="text-align: center">
+                    <span style="font-size: 20px; color: rgb(23, 140, 223)"
+                      >日期：</span
+                    ><span style="font-size: 20px"><%=time%></span
+                    ><br />
+                  </p>
+                  <p style="text-align: center">
+                    <span
+                      ><span style="color: rgb(23, 140, 223); font-size: 20px"
+                        >车牌号：</span
+                      ></span
+                    ><span style="font-size: 20px">无</span>
+                  </p>
+                  <p style="text-align: center">
+                    <span style="font-size: 20px; color: rgb(23, 140, 223)"
+                      >证件号：</span
+                    ><span style="font-size: 20px"><%=identity%></span>
+                  </p>
+                  <p style="text-align: center">
+                    <span
+                      style="color: rgb(13, 179, 166); font-size: 22px"
+                    ></span
+                    ><br />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script type="text/javascript">
+      window.jdy_config = {
+        site: "https://www.jiandaoyun.com",
+        link_site: "https://link.jiandaoyun.com",
+        api_site: "https://api.jiandaoyun.com",
+        kms_site: "https://kms.jiandaoyun.com",
+        crm_site: "https://www.jiandaoyun.com",
+        assets_site: "https://g.jdycdn.com/app/pc/v497",
+        geo_amap_key: "c471351bf394765d2c41e58ac7540233",
+        geo_amap_security_config: {},
+        geojson_site: "https://g.jdycdn.com/shared/geojson/2021-08-01",
+        cookie_domain: ".jiandaoyun.com",
+        version: "4.9.7",
+        track_log_host: "https://track.jiandaoyun.com/log",
+        track_enable: true,
+        websocket_site: "https://messaging.jiandaoyun.com",
+      };
+      // 高德地图代理服务器设置
+      if (window.jdy_config && window.jdy_config.geo_amap_security_config) {
+        window._AMapSecurityConfig = window.jdy_config.geo_amap_security_config;
+      }
+      window.jdy_csrf_token = "qJ2FkYSJ-Zw85GM0WamE5h3IMrGWmWvd7B3U";
+      window.jdy_static = {
+        jdy_ver: "4.9.7",
+        ip: "61.239.38.58",
+        internal_link_site: "https://www.jiandaoyun.com",
+      };
+      window.jdy_env = "production";
+      window.jdy_jssdk_config = null;
+    </script>
+    <script
+      type="text/javascript"
+      async=""
+      src="//hm.baidu.com/hm.js?48ee90f250328e7eaea0c743a4c3a339"
+    ></script>
+    <script type="text/javascript">
+      window.jdy_access_token = "y2bo2BfoErS62BcCBdW4I9TPos+rhwoT2aGJj14bA0w=";
+      window.jdy_access_type = "form_public";
+      window.jdy_access_id = "5e3f79eb92c2f000065d493f";
+      window.jdy_form_view_config = {
+        needPass: false,
+        hasLogo: false,
+        hasCustomTheme: true,
+        appId: "5cb6bc140ff6db41f209cf85",
+        entryId: "5e3f79eb92c2f000065d493e",
+        abuseReportUrl:
+          "https://www.jiandaoyun.com/f/5b7a57b36774443a74336ef6?ext=5e3f79eb92c2f000065d493f",
+        wxEnhanceEnable: false,
+        ext: "",
+        wx_open_id: "",
+        wx_nickname: "",
+      };
+    </script> -->
+    <script src="https://g.jdycdn.com/app/mobile/manifest.1afcf9200f40f85805c4.js"></script>
+    <script src="https://g.jdycdn.com/app/mobile/utils.1afcf9200f40f85805c4.js"></script>
+    <script src="https://g.jdycdn.com/app/mobile/jdy-design.1afcf9200f40f85805c4.js"></script>
+    <script src="https://g.jdycdn.com/app/mobile/react.1afcf9200f40f85805c4.js"></script>
+    <script src="https://g.jdycdn.com/app/mobile/common.1afcf9200f40f85805c4.js"></script>
+    <script src="https://g.jdycdn.com/app/mobile/form-view.1afcf9200f40f85805c4.js"></script>
+
+    <div id="omni-extension" class="omni-closing omni-extension">
+      <div id="omni-wrap">
+        <div id="omni">
+          <div id="omni-search">
+            <input placeholder="Type a command or search" />
+          </div>
+          <div id="omni-list"></div>
+          <div id="omni-footer">
+            <div id="omni-results">153 results</div>
+            <div id="omni-arrows">
+              Use arrow keys <span class="omni-shortcut">↑</span
+              ><span class="omni-shortcut">↓</span> to navigate
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="omni-overlay"></div>
+    </div>
+    <div id="omni-extension-toast">
+      <img
+        src="chrome-extension://mapjgeachilmcbbokkgcbgpbakaaeehi/assets/check.svg"
+      /><span>The action has been successful</span>
+    </div>
+  </body>
+</html>
